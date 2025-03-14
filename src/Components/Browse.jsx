@@ -1,7 +1,8 @@
+import Header from "./Header.jsx";
 const Browse = () =>{
   return (
   <div>
-      Browse
+      <Header /> 
     </div>
   )
 }
