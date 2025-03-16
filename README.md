@@ -19,7 +19,9 @@ Netflix-GPT
 what i have created
 --sign In 
 --Sign Up
-
+--implemented signOut function
+--fatch movies from TMDB
+--we unsubscribed to th onauthstatechange callback
 
         
 
