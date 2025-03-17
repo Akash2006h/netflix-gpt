@@ -22,6 +22,7 @@ what i have created
 --implemented signOut function
 --fatch movies from TMDB
 --we unsubscribed to th onauthstatechange callback
+-- few changes on redux file
 
         
 
