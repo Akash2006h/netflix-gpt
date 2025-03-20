@@ -23,6 +23,6 @@ what i have created
 --fatch movies from TMDB
 --we unsubscribed to th onauthstatechange callback
 -- few changes on redux file
-
+-- added video background and title of movie in my incomming movies
         
 
