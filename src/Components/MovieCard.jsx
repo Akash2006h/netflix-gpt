@@ -1,9 +1,8 @@
 import {IMG_CDN_URL} from "../utils/constant.js"
-const MovieCard = () =>{
+const MovieCard = ({ posterPath}) =>{
   return (
-  <div>
-      <img alt = "movie card"
-      src = {IMG_CDN_URL}/>
+  <div className = "w-48 pr-4" >
+      <img alt = "movie card" src = {IMG_CDN_URL + posterPath}/>
       
   </div>
   
