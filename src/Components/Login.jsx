@@ -6,7 +6,8 @@ import {createUserWithEmailAndPassword, signInWithEmailAndPassword,updateProfile
 import {auth} from "../utils/firebase.js";
 import {useDispatch} from "react-redux";
 import {addUser} from "../utils/userSlice.js";
-import {IMG} from "../utils/constant.js";
+import {IMG, BG_URL} from "../utils/constant.js";
+
 
 //import {useNavigate} from "react-router-dom";
 
@@ -76,7 +77,7 @@ const Login = () =>{
   <div className = "relative h-screen w-screen">
      <Header /> 
       <div className = "absolute inset-0">
-        <img src = "https://assets.nflxext.com/ffe/siteui/vlv3/42a0bce6-fc59-4c1c-b335-7196a59ae9ab/web/IN-en-20250303-TRIFECTA-perspective_d5f81427-d6cf-412d-8e86-2315671b9be1_large.jpg" alt = "page" className = "h-full w-full object-cover" />
+        <img src = {BG_URL} alt = "page" className = "h-full w-full object-cover" />
       </div>
    
        <form onSubmit = {(e) =>e.preventDefault()} className = "w-3/12 absolute p-12 bg-black/80 my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-50">

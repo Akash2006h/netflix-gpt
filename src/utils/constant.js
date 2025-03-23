@@ -13,3 +13,6 @@ export const API_OPTIONS = {
     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwODQ3NTA4OTIwYjdmMTI0ZDMyNDZmODA5ZDJmZjk4OSIsIm5iZiI6MTc0MTk1NjI5OC4zNjIsInN1YiI6IjY3ZDQyNGNhZjE3NDU5YzhmZjUzYzQ1ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.7D58vm1uAvP9NoqZyenAeIvokpysHQCRSFaSKr_fSSk'
   }
 };
+export const BG_URL = "https://assets.nflxext.com/ffe/siteui/vlv3/42a0bce6-fc59-4c1c-b335-7196a59ae9ab/web/IN-en-20250303-TRIFECTA-perspective_d5f81427-d6cf-412d-8e86-2315671b9be1_large.jpg"
+
+export const SUPPORTED_LANG = [{identifier: "en", name:"English"},{identifier:"hindi", name: "Hindi"},{identifier:"spanish",name:"Spanish"}]

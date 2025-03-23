@@ -6,6 +6,7 @@ import {useEffect} from "react";
 import {addUser, removeUser} from "../utils/userSlice.js";
 import {LOGO} from "../utils/constant.js";
 import {toggleGptSearchView } from "../utils/gptSlice.js"
+import {SUPPORTED_LANG} from "../utils/constant.js"
 const Header = () =>{
   const dispatch = useDispatch();
   
@@ -51,7 +52,11 @@ const Header = () =>{
    <img className = "w-44"
       src = {LOGO}
       alt = "logo" />
-      {user && <div className = "flex p-2">
+      {user &&
+      <div className = "flex p-2">
+      <select className = "p-2 m-2 bg-gray-900 text-white">
+            {SUPPORTED_LANG.map(lang => <option key = {lang.identifier} value ={lang.identifier}>{lang.name}</option>)}
+      </select>
       <button className = "py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg"
       onClick = {handleGptSearchButton}
       >GPT Search</button>
