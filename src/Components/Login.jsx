@@ -6,7 +6,7 @@ import {createUserWithEmailAndPassword, signInWithEmailAndPassword,updateProfile
 import {auth} from "../utils/firebase.js";
 import {useDispatch} from "react-redux";
 import {addUser} from "../utils/userSlice.js";
-import {USER_AVATER} from "../utils/constant.js";
+import {IMG} from "../utils/constant.js";
 
 //import {useNavigate} from "react-router-dom";
 
@@ -30,7 +30,7 @@ const Login = () =>{
     // Signed up 
     const user = userCredential.user;
     updateProfile(user, {
-  displayName: name.current.value, photoURL:USER_AVATER,
+  displayName: name.current.value, photoURL: IMG,
 }).then(() => {
   const {uid, email, displayName, photoURL} = auth.currentUser;
   dispatch(addUser({uid: uid, email: email, displayName: displayName, photoURL: photoURL}));

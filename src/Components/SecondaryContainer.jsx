@@ -10,8 +10,6 @@ const movies = useSelector((store) => store.movies)
       <MovieList title={"Trending"} movies = {movies.addTrandingMovies} />
       <MovieList title={"Popular"} movies = {movies.addPopularMovies} />
       <MovieList title={"Upcoming Movies"} movies = {movies.upCommingMovies} />
-      <MovieList title={"Horror movies"} movies = {movies.nowPlayingMovies} />
-      <MovieList title={"Anime"} movies = {movies.nowPlayingMovies} />
       </div>
 
     </div>
