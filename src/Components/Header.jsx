@@ -7,8 +7,10 @@ import {addUser, removeUser} from "../utils/userSlice.js";
 import {LOGO} from "../utils/constant.js";
 import {toggleGptSearchView } from "../utils/gptSlice.js"
 import {SUPPORTED_LANG} from "../utils/constant.js"
+import { changeLanguage } from "../utils/configSlice.js";
 const Header = () =>{
   const dispatch = useDispatch();
+  const showGptSearch = useSelector((store) => store.gpt.showGptSearch) 
   
   const user = useSelector(store => store.user);
   const navigate = useNavigate();
@@ -45,6 +47,10 @@ const Header = () =>{
     
     
   }
+  const handleLanguageChange = (e) =>{
+    dispatch(changeLanguage(e.target.value));
+  };
+
 
 
   return (
@@ -54,9 +60,11 @@ const Header = () =>{
       alt = "logo" />
       {user &&
       <div className = "flex p-2">
-      <select className = "p-2 m-2 bg-gray-900 text-white">
+       {showGptSearch && (    
+      <select className = "p-2 m-2 bg-gray-900 text-white" onChange = {handleLanguageChange}>
             {SUPPORTED_LANG.map(lang => <option key = {lang.identifier} value ={lang.identifier}>{lang.name}</option>)}
-      </select>
+      </select>)
+          }
       <button className = "py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg"
       onClick = {handleGptSearchButton}
       >GPT Search</button>
