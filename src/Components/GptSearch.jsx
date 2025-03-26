@@ -5,10 +5,12 @@ const GptSearch = () =>{
   return(
   <div>
         <div className = "fixed -z-10 ">
-        <img src ={BG_URL}  alt = "page" className = "h-full w-full object-cover" />
+        <img src ={BG_URL}  alt = "page" className = "h-screen object-cover" />
       </div>
+    <div className ="">
     <GptSearchBar />
     <GptMoviesSuggestion />
+    </div>
   </div>
   )
 }

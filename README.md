@@ -24,5 +24,9 @@ what i have created
 --we unsubscribed to th onauthstatechange callback
 -- few changes on redux file
 -- added video background and title of movie in my incomming movies
-        
+--create gptSlice
+-gpt 
+--fetch data to gpt and ask for recomendaation
+--.env gitignore
+--we made our side responsive
 
